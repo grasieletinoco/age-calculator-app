@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+  
+  <title>Frontend Mentor | Age Calculator App</title>
+
+</head>
+<body>
+
+  <main>
+    <section class="calculadora">
+
+      <form class="calculadora__age" id="formulario">
+
+        <div class="campo_form">
+          <div>
+            <label for="dia" id="dayLabel">Day</label>
+            <input type="number" name="" id="day" placeholder="DD">
+            <p id="day-helper" class="helper-text"></p>
+          </div> 
+          <div>
+            <label for="mes" id="monthLabel">Month</label>
+            <input type="number" name="" id="month" placeholder="MM">
+            <p id="month-helper" class="helper-text"></p>
+          </div>  
+          <div>
+            <label for="ano" id="yearLabel">Year</label>
+            <input type="number" name="" id="year" placeholder="YYYY">
+            <p id="year-helper" class="helper-text"></p>
+          </div>  
+        </div>
+
+        <div class="campo__btn">
+          <span><hr></span>
+          <button type="submit" id="btn"><img src="assets/images/icon-arrow.svg" alt="button"></button>
+        </div>
+
+        <div class="calculadora__resultado">
+          <p id="yearResult"> <span>-- </span> years </p>
+          <p id="monthResult"> <span>-- </span> months </p>
+          <p id="dayResult"> <span>-- </span> days </p>
+        </div>
+  
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p>Desenvolvido por <a href="https://github.com/grasieletinoco" target="_blank" title="GitHub">Grasiele Tinoco</a> - Challenge by Frontend Mentor</p>
+    </div>
+  </footer>
+
+</body>
+</html>
