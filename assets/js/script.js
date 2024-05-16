@@ -168,13 +168,14 @@ function calcularIdade() {
     let meses = mesAtual - mes;
     let dias = diaAtual - dia;
 
-    if (meses < 0 || (meses === 0 && dias < 0)) {
+    if (dias < 0) {
+        meses--;
+        dias += new Date(anoAtual, mesAtual - 1, 0).getDate();
+    }
+
+    if (meses < 0) {
         anos--;
         meses += 12;
-    }
-    if (dias < 0) {
-        mesAtual--;
-        dias += new Date(anoAtual, mesAtual, 0).getDate();
     }
 
     yearResult.innerHTML = "<span>" + anos + "</span> years";
